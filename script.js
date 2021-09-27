@@ -131,7 +131,7 @@ fetch("https://restcountries.com/v3/all")
         row.appendChild(col);
 
         bttn.onclick = function(){
-            fetch("http://api.openweathermap.org/data/2.5/weather?q="+item.capital[0]+"&appid=76e2ae3c30b69101e2f25e68c88f1e93")
+            fetch("https://api.openweathermap.org/data/2.5/weather?q="+item.capital[0]+"&appid=76e2ae3c30b69101e2f25e68c88f1e93")
             .then(function(data2){
                 return data2.json();
             })
